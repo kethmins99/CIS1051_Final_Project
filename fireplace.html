@@ -1,0 +1,34 @@
+<head>
+    <title>
+        Fireplace
+    </title>
+    <link rel="stylesheet" type="text/css" href="fire_style.css" />
+</head>
+
+<body>
+    <a href="home.html"><button id="HomeButton">Back To Home</button></a>
+    <h1>Welcome To The Fireplace Theme</h1>
+    <div id="Main">
+        <div><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX05VdJQ1gtnD?utm_source=generator"
+                width="30%" height="500" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div>
+            <textarea id="Notepad">Enter your notes here...</textarea>
+            <button id="savebutton" onclick="saveNotes()">Save</button>
+            <button id="retrievebutton" onclick="retrieveNotes()">Retrieve Saved Notes</button>
+            <script>
+                function saveNotes() {
+                    entered_text = document.getElementById("Notepad").value;
+                    localStorage.setItem("saved_notes", entered_text);
+                    alert('Your notes have been saved!');
+                }
+                function retrieveNotes() {
+                    retrieved_notes = localStorage.getItem("saved_notes");
+                    document.getElementById("Notepad").value = retrieved_notes;
+                }
+            </script>
+        </div>
+    </div>
+
+</body>

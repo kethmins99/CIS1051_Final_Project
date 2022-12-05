@@ -2,15 +2,33 @@
     <title>
         Forest
     </title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="forest_style.css" />
 </head>
 
 <body>
-    <center>
-        <h1>This is a heading for forest</h1>
-        <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M?utm_source=generator" width="30%"
-            height="500" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </center>
+    <a href="home.html"><button id="HomeButton">Back To Home</button></a>
+    <h1>Welcome To The Forest Theme</h1>
+    <div id="Main">
+        <div><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXbpYC8go5XtU?utm_source=generator"
+                width="30%" height="500" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div>
+            <textarea id="Notepad">Enter your notes here...</textarea>
+            <button id="savebutton" onclick="saveNotes()">Save</button>
+            <button id="retrievebutton" onclick="retrieveNotes()">Retrieve Saved Notes</button>
+            <script>
+                function saveNotes() {
+                    entered_text = document.getElementById("Notepad").value;
+                    localStorage.setItem("saved_notes", entered_text);
+                    alert('Your notes have been saved!');
+                }
+                function retrieveNotes() {
+                    retrieved_notes = localStorage.getItem("saved_notes");
+                    document.getElementById("Notepad").value = retrieved_notes;
+                }
+            </script>
+        </div>
+    </div>
+
 </body>

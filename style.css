@@ -8,71 +8,75 @@ body
 h1
 {
     color:white;
-    font-family: 'Trebuchet MS';
+    font-family: 'Didot';
     font-size: 60px;
     font-weight: bold;
     position:absolute;
-    top:150px;
-    left:500px;
+    top:28%;
+    left:50%;
 }
 h2
 {
     color:white;
-    font-family: 'Trebuchet MS';
+    font-family: 'Didot';
     font-size: 40px;
     font-weight: bold;
     position:absolute;
     text-align: center;
-    top:300px;
-    left:300px;
+    top:40%;
+    left:40%;
 }
 #ForestButton
 {
-    background-color: darkseagreen;
+    background-color: transparent;
     color:white;
-    font-family: 'Trebuchet MS';
+    font-family: 'Didot';
     font-size: 30px;
-    border: none;
+    border-color: white;
     border-radius: 10px;
     position:absolute;
-    top:400px;
-    left:500px;
+    top:54%;
+    left:47%;
+    padding:10px;
 }
 #ForestButton:hover
 {
-    background-color: mediumseagreen;
+    background-color: seagreen;
     transition: 0.5s;
 }
-#RiverButton
+#FireButton
 {
-    background-color: lightblue;
+    background-color: transparent;
     color:white;
-    font-family: 'Trebuchet MS';
+    font-family: 'Didot';
     font-size: 30px;
-    border: none;
+    border-color: white;
     border-radius:10px;
     position:absolute;
-    top:400px;
-    left:600px;
+    top:54%;
+    left:57%;
+    padding:10px;
 }
-#RiverButton:hover
+#FireButton:hover
 {
-    background-color: mediumturquoise;
+    background-color: lightsalmon;
     transition: 0.5s;
 }
 #CityButton
 {
-    background-color: lightslategray;
+    background-color: transparent;
     color:white;
-    font-family: 'Trebuchet MS';
+    font-family: 'Didot';
     font-size: 30px;
-    border: none;
+    border-color: white;
     border-radius:10px;
     position:absolute;
-    top:400px;
-    left:700px;
+    top:54%;
+    left:70.5%;
+    padding: 10px;
 }
 #CityButton:hover
 {
-    background-color: grey;
+    background-color: burlywood;
     transition: 0.5s;
+}

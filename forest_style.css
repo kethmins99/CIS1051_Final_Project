@@ -1,0 +1,89 @@
+#HomeButton
+{
+    position:absolute;
+    top:10px;
+    left:20px;
+    background-color: transparent;
+    color:white;
+    font-family: 'Didot';
+    font-size: medium;
+    border-color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(8px)
+}
+#HomeButton:hover
+{
+    background-color: seagreen;
+    transition: 0.5s;
+}
+body
+{
+    background-image: url('forest_bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1
+{
+    text-align: center;
+    color:white;
+    font-family: 'Didot';
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+iframe
+{
+    position:absolute;
+    top:175px;
+    left: 50px;
+}
+#Notepad
+{
+    position:absolute;
+    width: 50%;
+    height: 200px;
+    top:175px;
+    right:50px;
+    resize: none;
+    border-radius: 10px;
+    background-color: #BBDECF;
+    font-family: 'Didot';
+    font-size: medium;
+}
+#savebutton
+{
+    position:absolute;
+    top:400px;
+    right:50px;
+    background-color: transparent;
+    color:white;
+    font-family: 'Didot';
+    font-size: medium;
+    border-color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(8px)
+}
+#savebutton:hover
+{
+    background-color: seagreen;
+    transition: 0.5s;
+}
+#retrievebutton
+{
+    position:absolute;
+    top:435px;
+    right:50px;
+    background-color: transparent;
+    color:white;
+    font-family: 'Didot';
+    font-size: medium;
+    border-color: white;
+    border-radius: 10px;
+    backdrop-filter: blur(8px)
+}
+#retrievebutton:hover
+{
+    background-color: seagreen;
+    transition: 0.5s;
+}
